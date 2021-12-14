@@ -1,0 +1,20 @@
+Git commands:
+-------------
+Local git
+==========================================================
+git --version
+
+git init
+
+git status
+
+git add . 
+
+git commit -m "message here"
+============================================
+GITHUB
+=========================================================
+git remote add origin https://github.com/meganadh/JavaFS_11Dec2021_Batch.git
+git branch -M main
+git push -u origin main
+=====================================================================

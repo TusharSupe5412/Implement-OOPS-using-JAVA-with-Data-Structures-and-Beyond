@@ -1,0 +1,30 @@
+==================================
+Day-1 and Day-2 Assignment:
+==================================
+1. Complete Self Learn Videos (Section-3, Lesson-1 and Lesson-2)
+   before next saturday [ very important ]
+
+2. List down Data Types in Java (with wrapper class name, memory size,
+   range)
+   in a tabular format.
+
+   byte         Byte       1 byte      -128 to 127
+   short        Short      2 bytes 
+   int
+   long
+   float
+   double 
+   char
+   String
+   bool
+
+3. Write examples for increment and decrement operators
+
+4. Write java code for below programs:
+    a. Factorial of a number
+    b. Multiplication table of a given number
+    c. nCr and nPr values
+    
+5. Write the concepts discussed about strings in the class.
+   
+6. Research and write what is String pool in java
