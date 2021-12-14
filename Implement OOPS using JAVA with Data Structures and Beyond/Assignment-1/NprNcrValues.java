@@ -15,9 +15,9 @@ public class NprNcrValues {
 	}
 	public static int factorial(int n)
 	{
-		int i=1;
+		
 		int fact=1;
-		for(i=1;i<=n;i++)
+		for(int i=1;i<=n;i++)
 			fact=fact*i;
 		return fact;
 	}
