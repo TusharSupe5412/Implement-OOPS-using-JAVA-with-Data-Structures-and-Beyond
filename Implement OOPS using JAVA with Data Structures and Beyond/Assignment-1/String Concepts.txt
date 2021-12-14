@@ -1,0 +1,80 @@
+==================================================================
+String Concept                                       Time-(3:25)
+==================================================================
+The Java String is immutable which means it cannot be changed.(When
+ string is created it will not stored in stack memory directly it is
+stored in heap memory and address of that heap memory is storesd in
+stack memory)
+Whenever we change any string, a new instance is created in a heap
+memory and heap memory address of that new string is stored where a
+old string address was store.
+
+tip:- Address length of memory is based on computer ex-64 bit 
+
+Note:- The unused characters then automatically deleted by the 
+       garbge collection.
+
+===================================================================
+String pooling                                         Time-(3:40)
+===================================================================
+CasE 1>>>>>>>>>>>>
+
+package Strings;
+
+public class StringPooling {
+
+	public static void main(String[] args) {
+		String name1= "Tushar";
+		String name2= "Tushar";
+		
+		if (name1==name2)
+		{
+		System.out.println("Equal");
+				
+		}
+		else
+		System.out.println("Not equal");
+
+	}
+
+}
+
+Output= Equal
+
+===>>>In the above example, only one object will be created.
+ Firstly, JVM will not find any string object with the value 
+"Tushar" in string constant pool that is why it will create a new 
+object. After that it will find the string with the value "Tushar" 
+in the pool, it will not create a new object but will return the 
+reference to the same instance.
+
+Note:- That means Address of name1 is pointing to "Tushar" and
+       address of name2 is also pointing to "Tushar"
+
+
+Case 2>>>>>>>>
+
+package Strings;
+
+public class StringPooling {
+
+	public static void main(String[] args) {
+		String name1= "Tushar";
+		String name2= new String("Tushar");
+		
+		if (name1==name2)
+		{
+		System.out.println("Equal");
+				
+		}
+		else
+		System.out.println("Not equal");
+
+	}
+
+}
+
+Output= Not Equal
+
+==>>>>In above example, we created to differnt objects so thats why
+we get output as not equal
